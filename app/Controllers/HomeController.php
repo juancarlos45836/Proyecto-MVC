@@ -1,9 +1,11 @@
 <?php 
 namespace App\Controllers;
 
-class HomeController{
-    static function index(){
-        echo 'hola desde inicio
-        ';
-    }
+class HomeController extends Controller{
+    public function index(){
+        return $this->view('home',[
+            'title'=>"home",
+            'description'=>'este es la descripcion'
+        ]);
+    }  
 }

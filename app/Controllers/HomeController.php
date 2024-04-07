@@ -1,11 +1,12 @@
 <?php 
 namespace App\Controllers;
+use App\Models\User;
 
 class HomeController extends Controller{
     public function index(){
-        return $this->view('home',[
-            'title'=>"home",
-            'description'=>'este es la descripcion'
-        ]);
+        $users = new User();
+
+        return $users->delete(1);
+        
     }  
 }

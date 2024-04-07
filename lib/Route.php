@@ -18,7 +18,6 @@ class Route{
        
       $uri = $_SERVER['REQUEST_URI'];
       $uri = trim($uri,'/');
-
       //Metodo que sirve para saber porque metodo se esta enviado los datos del formulario
       $method = $_SERVER['REQUEST_METHOD'];
    
@@ -34,9 +33,9 @@ class Route{
          if(strpos($route,':') !== false){
             $route = preg_replace('#:[a-zA-Z]+#', '([a-zA-Z]+)', $route);
          }
+         $route = trim($route,'/');
          if(preg_match("#^$route$#",$uri,$matches)){
             $params = array_slice($matches,1);
-
             // $response = $callback(...$params);
             if(is_callable($callback)){
                $response = $callback(...$params);

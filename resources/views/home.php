@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Titulo : <?php echo $title;  echo $description; ?></h1>
+    <h1>hola mundo </h1>
+    <ul>
+        <?php for ($i=0; $i <count($users) ; $i++) { 
+            echo "<li>".$users[$i][1]."</li>";
+        } ?> 
+    </ul>
+    
+    
+
+    
 </body>
 </html>

@@ -16,6 +16,7 @@ Route::get('/login/:slug/:curso', function ($slug, $curso) {
     return 'el slug es: '.$slug .'el curso es :  '.$curso;
 });
 Route::post('/login', [LoginController::class,'login']);
+Route::post('/register', [RegisterController::class,'newUser']);
 
 
 Route::dispatch();

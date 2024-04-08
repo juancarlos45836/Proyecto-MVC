@@ -14,10 +14,12 @@
               <form class="max-w-sm m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl" action="/login" method="post" >
                   <p class="text-white font-medium text-center text-lg font-bold">LOGIN</p>
                     <div class="">
+                      <p class="text-red-400 flex justify-center align-center"><?php if(isset($emailIncorrect)) echo "$emailIncorrect" ?></p>
                       <label class="block text-sm text-white" for="email">E-mail</label>
                       <input  name="email" class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white" type="email" id="email"  placeholder="Digite o e-mail" aria-label="email" required>
                     </div>
                     <div class="mt-2">
+                      <p class="text-red-400 flex justify-center align-center"><?php if(isset($passwordIncorrect)) echo "$passwordIncorrect" ?></p>
                       <label class="block  text-sm text-white">Password</label>
                       <input name="password" class="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"
                         type="password" id="password" placeholder="Digite a sua senha" arial-label="password" required>

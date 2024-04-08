@@ -16,7 +16,7 @@
                 <label for="" class="block mt-3 text-sm text-gray-700 text-center font-semibold">
                     Registrate
                 </label>
-                <form method="POST" action="server.php" class="mt-10">
+                <form method="POST" action="/register" class="mt-10">
                                     
                     <div>
                         <input type="text"  name="nombre" placeholder="Nombre" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
@@ -27,11 +27,7 @@
                     </div>
 
                     <div class="mt-7">                
-                        <input type="password" name="password" placeholder="Contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
-                    </div>
-
-                    <div class="mt-7">                
-                        <input type="password" name="passwordConfirm" placeholder="Confirmar contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+                        <input type="password" name="contrasena" placeholder="Contraseña" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
                     </div>
 
                     
@@ -65,7 +61,7 @@
                     <div class="mt-7">
                         <div class="flex justify-center items-center">
                             <label class="mr-2" >¿Ya tienes una cuenta?</label>
-                            <a href="#" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                            <a href="/login" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
                                 Iniciar sesion
                             </a>
                         </div>
